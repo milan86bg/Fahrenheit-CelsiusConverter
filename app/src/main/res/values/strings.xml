@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fahrenheit - Celsius Converter</string>
+    <string name="celsius_text">Celsius</string>
+    <string name="fahrenheit_text">Fahrenheit</string>
+    <string name="button_text">Convert</string>
+    <string name="clear_button_text">Clear</string>
+</resources>

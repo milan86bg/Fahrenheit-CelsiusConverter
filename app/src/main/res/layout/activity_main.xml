@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.milan.fahrenheit_celsiusconverter.MainActivity">
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textViewFahrenheit"
+        android:layout_alignStart="@+id/textViewFahrenheit"
+        android:layout_below="@+id/textViewFahrenheit"
+        android:layout_marginTop="73dp"
+        android:text="@string/button_text"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/convertButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/convertButton"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="@string/clear_button_text"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:text="@string/celsius_text"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/celsiusValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/textViewCelsius"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/textViewFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/celsiusValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:text="@string/fahrenheit_text"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/fahrenheitValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewFahrenheit"
+        android:layout_alignLeft="@+id/celsiusValue"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/celsiusValue"
+        android:layout_alignTop="@+id/textViewFahrenheit"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"/>
+
+</android.widget.RelativeLayout>
