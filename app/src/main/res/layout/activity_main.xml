@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="numberDecimal|numberSigned"
         android:textSize="18sp"
         android:layout_alignTop="@+id/textViewCelsius"
         android:layout_alignParentRight="true"
@@ -89,7 +89,7 @@
         android:layout_alignStart="@+id/celsiusValue"
         android:layout_alignTop="@+id/textViewFahrenheit"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="numberDecimal|numberSigned"
         android:textSize="18sp"/>
 
 </android.widget.RelativeLayout>
